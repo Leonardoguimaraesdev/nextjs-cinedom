@@ -1,0 +1,164 @@
+.CineImagesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    background: black;
+    color: #fff;
+    font-family: sans-serif;
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 5%;
+
+    }
+
+    .bottom {
+        display: flex;
+        width: 100%;
+        height: 95%;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 100%;
+
+
+            .leftTop {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 50%;
+
+                div {
+                    width: 50%;
+                    height: 200px;
+                    background-image: url(/dogMovie1.jpg);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    
+
+                }
+
+                h2 {
+                    margin-top: 10px;
+                }
+
+            }
+
+            .leftBottom {
+                display: flex;
+                width: 100%;
+                height: 50%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                div {
+                    width: 50%;
+                    height: 200px;
+                    background-image: url(/dogMovie2.jpg);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                }
+
+                h2 {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .middle {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 40%;
+            height: 100%;
+
+
+            div {
+                width: 90%;
+                height: 400px;
+                margin-top: 15px;
+                background-image: url(/dogMovie6.jpg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+
+            }
+
+            h2 {
+                margin-top: 10px;
+            }
+
+
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 100%;
+
+
+            .rightTop {
+                display: flex;
+                width: 100%;
+                height: 50%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                div {
+                    width: 50%;
+                    height: 200px;
+                    background-image: url(/dogMovie4.jpg);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                }
+
+                h2 {
+                    margin-top: 10px;
+                }
+            }
+
+            .rightBottom {
+                display: flex;
+                width: 100%;
+                height: 50%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                div {
+                    width: 50%;
+                    height: 200px;
+                    background-image: url(/dogMovie5.jpg);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                }
+
+                h2 {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

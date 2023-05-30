@@ -1,0 +1,173 @@
+{
+    "filmesEmCartaz": [
+      {
+        "nome": "Vingadores: Ultimato",
+        "categoria": "Ação",
+        "sinopse": "Após os eventos devastadores de 'Vingadores: Guerra Infinita', o universo está em ruínas. Com a ajuda dos aliados restantes, os Vingadores se reúnem para reverter as ações de Thanos e restaurar a ordem no universo.",
+        "trailer": "https://www.youtube.com/watch?v=TcMBFSGVi1c",
+        "elenco": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth", "Scarlett Johansson", "Jeremy Renner"],
+        "direcao": "Anthony Russo, Joe Russo"
+      },
+      {
+        "nome": "Jurassic Park",
+        "categoria": "Aventura",
+        "sinopse": "Um parque temático recria dinossauros a partir de DNA pré-histórico. Quando os sistemas do parque sofrem uma falha, as criaturas se soltam e começam a aterrorizar os visitantes.",
+        "trailer": "https://www.youtube.com/watch?v=lc0UehYemQA",
+        "elenco": ["Sam Neill", "Laura Dern", "Jeff Goldblum", "Richard Attenborough"],
+        "direcao": "Steven Spielberg"
+      },
+      {
+        "nome": "O Poderoso Chefão",
+        "categoria": "Crime, Drama",
+        "sinopse": "A saga da família Corleone, liderada pelo patriarca Don Vito Corleone, um poderoso chefão do crime em Nova York. O filme acompanha a vida do filho Michael Corleone e sua ascensão no império da máfia.",
+        "trailer": "https://www.youtube.com/watch?v=sY1S34973zA",
+        "elenco": ["Marlon Brando", "Al Pacino", "James Caan", "Robert Duvall"],
+        "direcao": "Francis Ford Coppola"
+      },
+      {
+        "nome": "Interestelar",
+        "categoria": "Ficção Científica",
+        "sinopse": "Um grupo de exploradores viaja pelo espaço em busca de um novo lar para a humanidade após a Terra sofrer com uma crise ambiental. Eles enfrentam desafios cósmicos e descobrem segredos que desafiam a compreensão humana.",
+        "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+        "elenco": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain", "Michael Caine"],
+        "direcao": "Christopher Nolan"
+      },
+      {
+        "nome": "O Senhor dos Anéis: O Retorno do Rei",
+        "categoria": "Fantasia, Aventura",
+        "sinopse": "Enquanto Frodo e Sam continuam sua jornada para destruir o Um Anel, o exército de Sauron se prepara para uma grande batalha que decidirá o destino da Terra Média.",
+        "trailer": "https://www.youtube.com/watch?v=r5X-hFf6Bwo",
+        "elenco": ["Elijah Wood", "Viggo Mortensen", "Ian McKellen", "Orlando Bloom"],
+        "direcao": "Peter Jackson"
+      },
+      {
+        "nome": "Pulp Fiction: Tempo de Violência",
+        "categoria": "Crime, Drama",
+        "sinopse": "A história segue vários personagens interligados, incluindo dois assassinos profissionais, um pugilista em decadência e um casal de criminosos apaixonados.",
+        "trailer": "https://www.youtube.com/watch?v=s7EdQ4FqbhY",
+        "elenco": ["John Travolta", "Samuel L. Jackson", "Uma Thurman", "Bruce Willis"],
+        "direcao": "Quentin Tarantino"
+      },
+      {
+        "nome": "O Labirinto do Fauno",
+        "categoria": "Fantasia, Drama",
+        "sinopse": "Em uma Espanha pós-Guerra Civil, uma jovem garota escapa para um mundo de fantasia ao encontrar um labirinto mágico e enfrentar criaturas místicas para salvar seu irmão do malvado Capitão Vidal.",
+        "trailer": "https://www.youtube.com/watch?v=XRZ9iXD8dB0",
+        "elenco": ["Ivana Baquero", "Sergi López", "Maribel Verdú", "Doug Jones"],
+        "direcao": "Guillermo del Toro"
+      },
+      {
+        "nome": "Clube da Luta",
+        "categoria": "Drama",
+        "sinopse": "Um homem descontente com sua vida monótona e sem propósito cria um clube de luta clandestino que acaba se tornando uma revolução violenta.",
+        "trailer": "https://www.youtube.com/watch?v=QPcAU8JnDB0",
+        "elenco": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
+        "direcao": "David Fincher"
+      },
+      {
+        "nome": "Cidade de Deus",
+        "categoria": "Crime, Drama",
+        "sinopse": "A história de vida de diversos personagens que cresceram em uma das favelas mais violentas do Rio de Janeiro, revelando a dura realidade e as tensões sociais do local.",
+        "trailer": "https://www.youtube.com/watch?v=dcUOO4Itgmw",
+        "elenco": ["Alexandre Rodrigues", "Leandro Firmino", "Phellipe Haagensen"],
+        "direcao": "Fernando Meirelles, Kátia Lund"
+      },
+      {
+        "nome": "A Origem",
+        "categoria": "Ficção Científica, Ação",
+        "sinopse": "Um ladrão especializado em extrair segredos do subconsciente das pessoas é contratado para implantar uma ideia na mente de um executivo poderoso, desencadeando uma série de eventos perigosos.",
+        "trailer": "https://www.youtube.com/watch?v=8hP9D6kZseM",
+        "elenco": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page", "Tom Hardy"],
+        "direcao": "Christopher Nolan"
+      },
+      {
+        "nome": "Matrix",
+        "categoria": "Ficção Científica, Ação",
+        "sinopse": "Um jovem programador descobre que a realidade em que ele vive é uma simulação de computador controlada por máquinas. Ele se junta a um grupo de rebeldes para combater as máquinas e libertar a humanidade.",
+        "trailer": "https://www.youtube.com/watch?v=Q8g9zL-JL8E",
+        "elenco": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss", "Hugo Weaving"],
+        "direcao": "The Wachowskis"
+      },
+      {
+        "nome": "O Silêncio dos Inocentes",
+        "categoria": "Suspense, Crime",
+        "sinopse": "Uma jovem agente do FBI busca a ajuda de um perigoso assassino em série encarcerado para capturar um assassino em série em liberdade, conhecido como Buffalo Bill.",
+        "trailer": "https://www.youtube.com/watch?v=W6Mm8Sbe__o",
+        "elenco": ["Jodie Foster", "Anthony Hopkins", "Scott Glenn"],
+        "direcao": "Jonathan Demme"
+      },
+      {
+        "nome": "Interestelar",
+        "categoria": "Ficção Científica",
+        "sinopse": "Um grupo de exploradores viaja pelo espaço em busca de um novo lar para a humanidade após a Terra sofrer com uma crise ambiental. Eles enfrentam desafios cósmicos e descobrem segredos que desafiam a compreensão humana.",
+        "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+        "elenco": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain", "Michael Caine"],
+        "direcao": "Christopher Nolan"
+      },
+      {
+        "nome": "O Senhor dos Anéis: A Sociedade do Anel",
+        "categoria": "Fantasia, Aventura",
+        "sinopse": "Um jovem hobbit chamado Frodo recebe a missão de destruir um poderoso anel antes que ele caia nas mãos do maligno Senhor do Escuro, Sauron.",
+        "trailer": "https://www.youtube.com/watch?v=V75dMMIW2B4",
+        "elenco": ["Elijah Wood", "Ian McKellen", "Viggo Mortensen", "Liv Tyler"],
+        "direcao": "Peter Jackson"
+      },
+      {
+        "nome": "Psicose",
+        "categoria": "Suspense, Terror",
+        "sinopse": "Após roubar dinheiro de seu empregador, uma secretária foge e acaba se hospedando em um motel estranho, gerenciado por um jovem perturbado chamado Norman Bates.",
+        "trailer": "https://www.youtube.com/watch?v=Wz719b9QUqY",
+        "elenco": ["Anthony Perkins", "Janet Leigh", "Vera Miles"],
+        "direcao": "Alfred Hitchcock"
+      },
+      {
+        "nome": "A Viagem de Chihiro",
+        "categoria": "Animação, Fantasia",
+        "sinopse": "Uma garota chamada Chihiro se perde em um mundo mágico habitado por espíritos, e ela deve trabalhar em um banho público para libertar seus pais transformados em porcos e encontrar um caminho de volta para casa.",
+        "trailer": "https://www.youtube.com/watch?v=ByXuk9QqQkk",
+        "elenco": ["Rumi Hiiragi", "Miyu Irino", "Mari Natsuki"],
+        "direcao": "Hayao Miyazaki"
+      },
+      {
+        "nome": "Os Bons Companheiros",
+        "categoria": "Crime, Drama",
+        "sinopse": "A história de Henry Hill, um mafioso ítalo-americano que cresceu nas ruas de Nova York e se torna membro da máfia, enfrentando os desafios e perigos do mundo do crime organizado.",
+        "trailer": "https://www.youtube.com/watch?v=qo5jJpHtI1Y",
+        "elenco": ["Robert De Niro", "Ray Liotta", "Joe Pesci"],
+        "direcao": "Martin Scorsese"
+      },
+      {
+        "nome": "Interestelar",
+        "categoria": "Ficção Científica",
+        "sinopse": "Um grupo de exploradores viaja pelo espaço em busca de um novo lar para a humanidade após a Terra sofrer com uma crise ambiental. Eles enfrentam desafios cósmicos e descobrem segredos que desafiam a compreensão humana.",
+        "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+        "elenco": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain", "Michael Caine"],
+        "direcao": "Christopher Nolan"
+      },
+      {
+        "nome": "Pulp Fiction: Tempo de Violência",
+        "categoria": "Crime, Drama",
+        "sinopse": "A história segue vários personagens interligados, incluindo dois assassinos profissionais, um pugilista em decadência e um casal de criminosos apaixonados.",
+        "trailer": "https://www.youtube.com/watch?v=s7EdQ4FqbhY",
+        "elenco": ["John Travolta", "Samuel L. Jackson", "Uma Thurman", "Bruce Willis"],
+        "direcao": "Quentin Tarantino"
+      },
+      {
+        "nome": "O Labirinto do Fauno",
+        "categoria": "Fantasia, Drama",
+        "sinopse": "Em uma Espanha pós-Guerra Civil, uma jovem garota escapa para um mundo de fantasia ao encontrar um labirinto mágico e enfrentar criaturas místicas para salvar seu irmão do malvado Capitão Vidal.",
+        "trailer": "https://www.youtube.com/watch?v=XRZ9iXD8dB0",
+        "elenco": ["Ivana Baquero", "Sergi López", "Maribel Verdú", "Doug Jones"],
+        "direcao": "Guillermo del Toro"
+      },
+      {
+        "nome": "Clube da Luta",
+        "categoria": "Drama",
+        "sinopse": "Um homem descontente com sua vida monótona e sem propósito cria um clube de luta clandestino que acaba se tornando uma revolução violenta.",
+        "trailer": "https://www.youtube.com/watch?v=QPcAU8JnDB0",
+        "elenco": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
+        "direcao": "David Fincher"
+      }
+    ]
+  }
+  
