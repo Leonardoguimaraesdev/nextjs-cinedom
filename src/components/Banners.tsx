@@ -32,7 +32,7 @@ export default function Banners() {
                 </svg>
             </div>
             <div className={styles.banners}>
-                <Image className={styles.img} src={arrayBanner[numArray]} alt='Banner de filme' width={1170} height={637}/>
+                <Image className={styles.img} src={arrayBanner[numArray]} alt='Banner de filme' width={1170} height={637} priority/>
             </div>
             <div className={styles.right}>
                 <svg onClick={(e) => changeBannerRight()} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#fff" className={styles.switchRight}>

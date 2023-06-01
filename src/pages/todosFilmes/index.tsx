@@ -15,12 +15,14 @@ export async function getServerSideProps() {
 }
 
 
-export default function TodosFilmes({filmes}:any) {
+
+export default function TodosFilmes(props:any) {
+  console.log(props.filmes)
 
   return (
     <div className={styles.main}>
         <NavBar page='TODOS FILMES'/>
-        <ContentFilms films={filmes}/>
+        <ContentFilms films={props.filmes}/>
         <Footer />
     </div>
   )

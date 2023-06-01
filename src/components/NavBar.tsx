@@ -8,10 +8,12 @@ interface NavBarProps {
 }
 
 export default function NavBar(props: NavBarProps) {
-    
+
     const router = useRouter()
-    
+
     const [array, setArray] = useState(['HOME', 'TODOS FILMES', 'COMÉDIA', 'DRAMA', 'AÇÃO', 'ROMANCE', 'ANIMAÇÂO'])
+
+
 
 
 
@@ -56,15 +58,15 @@ export default function NavBar(props: NavBarProps) {
             </div>
             <div className={styles.bottom}>
                 <ul>
-                    {array.map((item, i) => {
-                        let backGround = ''
-                        if (props.page === item) {
-                            backGround = 'red'
-                        } else {
-                            backGround = ''
-                        }
-                        return (<li onClick={() => changePage(item)} style={{ backgroundColor: backGround }} key={i}>{item}</li>)
-                    })}
+                    {array.map((item, i) => (
+                        <li
+                            onClick={() => changePage(item)}
+                            className={props.page === item ? styles.red : styles.black}
+                            key={i}
+                        >
+                            {item}
+                        </li>
+                    ))}
                 </ul>
             </div>
         </nav>
