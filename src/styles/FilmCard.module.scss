@@ -1,0 +1,125 @@
+.filmCard {
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 400px;
+    margin: 20px;
+
+    &:hover {
+        .overlay {
+            opacity: 1;
+        }
+    }
+
+    .img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border: 1px solid red;
+        border-radius: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .overlayWindowBlock {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.801);
+        z-index: 9999;
+
+        .overlayWindow {
+            width: 60%;
+            height: 600px;
+            background-color: #ffffff;
+            border-radius: 20px;
+
+            .btn {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                height: 5%;
+
+                button {
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    padding: 5px;
+                    background-color: #ffffff00;
+                    border: none;
+                    color: red;
+                    font-size: 1.3rem;
+
+                    &:hover {
+
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                height: 95%;
+                padding: 20px;
+                color: black;
+
+                p{
+                    margin-top: 30px;
+                }
+            }
+
+
+        }
+
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+        cursor: pointer;
+
+        .overlayButtons {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+
+            .btn {
+                padding: 5px 10px;
+                background-color: white;
+                border: none;
+                border-radius: 4px;
+                margin: 5px;
+                font-family: sans-serif;
+                font-weight: 700;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: red;
+                    color: #fff
+                }
+            }
+        }
+    }
+}

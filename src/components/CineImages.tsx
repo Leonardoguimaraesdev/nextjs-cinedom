@@ -7,29 +7,29 @@ export default function CineImages() {
 
     return (
         <section className={styles.CineImagesContainer}>
-            <div className={styles.top}> <h1><u>FILMES RECENTES</u></h1></div>
+            <div className={styles.top}> <h1><u>LANÇAMENTOS</u></h1></div>
             <div className={styles.bottom}>
                 <div className={styles.left}>
                     <div className={styles.leftTop}>
-                        <div></div>
+                        <Image className={styles.img} src='/dogMovie7.jpg' alt='banner de filme' width={400} height={200} />
                         <h2>Adasdasasdasd</h2>
                     </div>
                     <div className={styles.leftBottom}>
-                        <div></div>
+                        <Image className={styles.img} src='/dogMovie8.jpg' alt='banner de filme' width={400} height={200} />
                         <h2>Adasdasasdasd</h2>
                     </div>
                 </div>
                 <div className={styles.middle}>
-                    <div></div>
-                    <h2>Adasdasasdasd</h2>
+                    <Image className={styles.img} src='/dogMovie9.jpg' alt='banner de filme' width={700} height={200} />
+                    <h2>A caminho de casa</h2>
                 </div>
                 <div className={styles.right}>
                     <div className={styles.rightTop}>
-                        <div></div>
+                        <Image className={styles.img} src='/dogMovie10.jpg' alt='banner de filme' width={400} height={200} />
                         <h2>Adasdasasdasd</h2>
                     </div>
                     <div className={styles.rightBottom}>
-                        <div></div>
+                        <Image className={styles.img} src='/dogMovie2.jpg' alt='banner de filme' width={400} height={200} />
                         <h2>Adasdasasdasd</h2>
                     </div>
                 </div>

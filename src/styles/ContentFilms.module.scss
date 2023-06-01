@@ -1,0 +1,11 @@
+.contentFilmsContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 900px;
+    overflow-y: auto;
+    padding: 50px 60px;
+    background: black;
+}

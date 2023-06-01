@@ -26,14 +26,17 @@
 
     .banners {
         display: flex;
-        width: 60%;
-        height: 80%;
-        background-image: url("/DogBanner.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        border: 1px solid red;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 100%;
 
+        .img {
+            border: 1px solid red;
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
 
     }
 
