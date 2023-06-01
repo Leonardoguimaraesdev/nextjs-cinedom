@@ -6,7 +6,7 @@ interface ContentFilmsProps {
     films: {}
 }
 
-export default function ContentFilms(props:ContentFilmsProps) {
+export default function ContentFilms(props: ContentFilmsProps) {
 
 
     return (
@@ -17,13 +17,7 @@ export default function ContentFilms(props:ContentFilmsProps) {
             <FilmCard />
             <FilmCard />
             <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
+
         </section>
     )
 }

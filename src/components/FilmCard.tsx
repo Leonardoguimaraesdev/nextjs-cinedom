@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import styles from '../styles/FilmCard.module.scss'
 import { useState } from 'react';
+import VideoModal from './VideoModal';
+import SinopseModal from './SinopseModal';
 
 
 
 export default function FilmCard() {
 
     const [isOverlayCard, setIsOverlayCard] = useState(false);
-    const [isOverlayWindowSinopse, setIsOverlayWindowSinopse] = useState(false);
+    const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+    const [isSinopseModalOpen, setIsSinopseModalOpen] = useState(false);
 
     const handleMouseLeave = () => {
         setIsOverlayCard(false);
@@ -17,13 +20,22 @@ export default function FilmCard() {
         setIsOverlayCard(true);
     };
 
-    const sinopseWindowOpen = () => {
-        setIsOverlayWindowSinopse(true);
+    const handleOpenSinopseModal = () => {
+        setIsSinopseModalOpen(true);
     };
 
-    const sinopseWindowClose = () => {
-        setIsOverlayWindowSinopse(false);
+    const handleCloseSinopseModal = () => {
+        setIsSinopseModalOpen(false);
     };
+
+    const handleOpenVideoModal = () => {
+        setIsVideoModalOpen(true);
+    };
+
+    const handleCloseVideoModal = () => {
+        setIsVideoModalOpen(false);
+    };
+
 
     return (
         <div className={styles.filmCard}
@@ -34,24 +46,20 @@ export default function FilmCard() {
             {isOverlayCard && (
                 <div className={styles.overlay}>
                     <div className={styles.overlayButtons}>
-                        <button onClick={sinopseWindowOpen} className={styles.btn}>SINOPSE</button>
-                        <button className={styles.btn}>TRAILER</button>
+                        <button onClick={handleOpenSinopseModal} className={styles.btn}>SINOPSE</button>
+                        <button onClick={handleOpenVideoModal} className={styles.btn}>TRAILER</button>
                     </div>
                 </div>
             )}
-            {isOverlayWindowSinopse && (
-                <div className={styles.overlayWindowBlock}>
-                    <div className={styles.overlayWindow}>
-                        <div className={styles.btn}>
-                            <button onClick={sinopseWindowClose}>X</button>
-                        </div>
-                        <div className={styles.text}>
-                            <h1>SINOPSE</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum rem deleniti deserunt necessitatibus unde autem. Sapiente eveniet cum quasi sit, possimus necessitatibus minus laboriosam. Facere iusto provident eveniet fugit possimus.</p>
-                        </div>
-                    </div>
-                </div>
-            )}
+            <VideoModal
+                isOpen={isVideoModalOpen}
+                videoId="ZGkOik10Itg" // Substitua pelo ID do vídeo do YouTube desejado
+                closeModal={handleCloseVideoModal}
+            />
+            <SinopseModal
+                isOpen={isSinopseModalOpen}
+                closeModal={handleCloseSinopseModal}
+            />
         </div>
     )
 }

@@ -1,0 +1,36 @@
+.modal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .top{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 5%;
+
+        button{
+            padding: 10px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 1.5rem;
+            color: red;
+            cursor: pointer;
+        }
+    }
+
+    .bottom{
+        width: 100%;
+        height: 95%;
+
+        h1 {
+            text-align: center;
+        }
+
+        p{
+            margin-top: 20px;
+        }
+    }
+}
