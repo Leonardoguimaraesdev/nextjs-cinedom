@@ -17,6 +17,12 @@ export default function ContentFilms(props: ContentFilmsProps) {
             <FilmCard />
             <FilmCard />
             <FilmCard />
+            <FilmCard />
+            <FilmCard />
+            <FilmCard />
+            <FilmCard />
+            <FilmCard />
+            <FilmCard />
 
         </section>
     )
