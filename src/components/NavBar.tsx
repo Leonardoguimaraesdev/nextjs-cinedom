@@ -1,16 +1,18 @@
 import Image from 'next/image'
 import styles from '../styles/NavBar.module.scss'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 
 interface NavBarProps {
     page: string
 }
 
 export default function NavBar(props: NavBarProps) {
-
-    const array = ['HOME', 'TODOS FILMES', 'COMÉDIA', 'DRAMA', 'AÇÃO', 'ROMANCE', 'ANIMAÇÂO']
-
+    
     const router = useRouter()
+    
+    const [array, setArray] = useState(['HOME', 'TODOS FILMES', 'COMÉDIA', 'DRAMA', 'AÇÃO', 'ROMANCE', 'ANIMAÇÂO'])
+
 
 
     const changePage = (e: any) => {

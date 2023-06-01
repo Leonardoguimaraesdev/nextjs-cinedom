@@ -4,7 +4,7 @@ import styles from '@/styles/Home.module.scss'
 import ContentFilms from '@/components/ContentFilms'
 
 export async function getServerSideProps() {
-  const response = await fetch('http://localhost:3000/api/movies');
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies`);
   const data = await response.json();
 
   return {
@@ -15,7 +15,7 @@ export async function getServerSideProps() {
 }
 
 
-export default function Romance({filmes}:any) {
+export default function Drama({filmes}:any) {
 
   return (
     <div className={styles.main}>
