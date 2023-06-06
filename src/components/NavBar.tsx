@@ -44,6 +44,13 @@ export default function NavBar(props: NavBarProps) {
 
     }
 
+    const goToLogin = () => {
+        router.push('/login')
+    }
+    const goToRegister = () => {
+        router.push('/register')
+    }
+
     return (
         <nav className={styles.nav}>
             <div className={styles.opacity}></div>
@@ -52,8 +59,8 @@ export default function NavBar(props: NavBarProps) {
                     <Image className={styles.img} alt='Dog with popcorn and 3dglass' src='/cinedom.png' width={180} height={180} />
                 </div>
                 <div className={styles.right}>
-                    <button>ENTRAR</button>
-                    <button>CADASTRE-SE</button>
+                    <button onClick={goToLogin}>ENTRAR</button>
+                    <button onClick={goToRegister}>CADASTRE-SE</button>
                 </div>
             </div>
             <div className={styles.bottom}>

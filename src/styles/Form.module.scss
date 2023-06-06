@@ -1,0 +1,68 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+    border-radius: 15px;
+    border: 2px solid red;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 20px 0px;
+
+    @media screen and (max-width: 1024px) {
+        width: 65%;
+
+    }
+
+    @media screen and (max-width: 780px) {
+        width: 90%;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        color: #fff;
+
+        @media screen and (max-width: 1024px) {
+            width: 65%;
+    
+        }
+
+        @media screen and (max-width: 780px) {
+            width: 80%;
+    
+        }
+
+        h1 {
+            margin-bottom: 50px;
+            text-align: center;
+           font-size: 2rem;
+        }
+
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+
+        button {
+            margin-bottom: 15px;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+
+            &:hover {
+                background-color: greenyellow;
+            }
+        }
+
+        h4 {
+            font-size: 0.6rem;
+            u{
+                margin-left: 5px;
+                color: red;
+            }
+        }
+    }
+}
