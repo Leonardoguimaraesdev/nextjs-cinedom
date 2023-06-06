@@ -10,7 +10,7 @@ const saveUser = async (queryUser) => {
         const newUser = new User(queryUser);
         await newUser.save();
 
-        database.disconnect();
+        // database.disconnect();
 
         return true;
     } catch (error) {

@@ -60,6 +60,11 @@ export default function Input() {
                     },
                     body: JSON.stringify(data),
                 });
+                
+                if(response.ok){
+                    router.push('/login')
+                }
+
 
             } catch (error) {
                 // Tratar erros de conexão ou outras falhas
