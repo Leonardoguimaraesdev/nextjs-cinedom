@@ -25,7 +25,7 @@ type FormData = {
 };
 
 export default function Input() {
-    
+
     const router = useRouter()
 
     const [name, setName] = useState<string>('')
@@ -39,15 +39,37 @@ export default function Input() {
         resolver: yupResolver(schema)
     });
 
-    const onSubmit = (data: FormData) => {
+    const onSubmit = async (data: FormData) => {
 
         if (password !== confirmPassword) {
             const dif = <p>As senhas precisam ser iguais</p>
             setCheckPassword(dif)
         } else {
-            Cookies.set('name', name)
-            Cookies.set('email', email)
-            router.push('/login')
+            const url = '/api/register';
+            const data = {
+                name: name,
+                email: email,
+                password: password,
+            };
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+            } catch (error) {
+                // Tratar erros de conexão ou outras falhas
+                console.error('Erro na comunicação com a API:', error);
+                // Exiba uma mensagem de erro para o usuário
+            }
+
+            // Cookies.set('name', name)
+            // Cookies.set('email', email)
+            // router.push('/login')
 
         }
     };
@@ -86,7 +108,7 @@ export default function Input() {
                 />
                 <button type="submit">Cadastrar</button>
                 <h4>
-                    Caso já tenha uma conta 
+                    Caso já tenha uma conta
                     <Link href="/login">
                         <b><u>Clique Aqui</u></b>
                     </Link>

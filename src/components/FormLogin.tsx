@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styles from '../styles/Form.module.scss'
-import Cookies from 'js-cookie';
 import { useRouter } from 'next/router'
 import Link from "next/link";
 
@@ -13,17 +12,35 @@ export default function Input() {
 
     const [checkEmailExist, setCheckEmailExist] = useState<any>('')
 
-    const handleSubmit = (event: any) => {
-        
+    const handleSubmit = async (event: any) => {
+
         event.preventDefault();
 
-        const cookie = Cookies.get('email')
+        const url = '/api/login';
+        const data = {
+            email: email,
+        };
 
-        if (cookie !== email) {
-            const dif = <p>E-mail ou senha incorreta</p>
-            setCheckEmailExist(dif)
-        } else {
-            router.push('/')
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                const responseData = await response.json();
+                console.log('Login realizado com sucesso!', responseData);
+                router.push('/');
+            } else {
+                const errorData = await response.json();
+                console.error('Erro na resposta da API:', errorData);
+            }
+
+        } catch (error) {
+            console.error('Erro na comunicação com a API:', error);
         }
     };
 
