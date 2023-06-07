@@ -46,7 +46,7 @@ export default function Input() {
             const dif = <p>As senhas precisam ser iguais</p>
             setCheckPassword(dif)
         } else {
-            const url = '/api/register';
+            const url = `${process.env.NEXT_PUBLIC_BASE_URL}/api/register`;
             
             const data = {
                 name: name,

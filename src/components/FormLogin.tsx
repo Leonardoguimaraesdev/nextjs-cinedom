@@ -19,7 +19,7 @@ export default function Input() {
 
         event.preventDefault();
 
-        const url = '/api/login';
+        const url = `${process.env.NEXT_PUBLIC_BASE_URL}/api/login`;
         const data = {
             email: email,
             password: password

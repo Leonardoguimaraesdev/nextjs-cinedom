@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from '../styles/NavBar.module.scss'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
+import Cookies from 'js-cookie'
 
 interface NavBarProps {
     page: string
@@ -52,6 +53,11 @@ export default function NavBar(props: NavBarProps) {
         router.push('/register')
     }
 
+    const logout = () => {
+        Cookies.remove('token')
+        window.location.reload();
+    }
+
     return (
         <nav className={styles.nav}>
             <div className={styles.opacity}></div>
@@ -61,7 +67,7 @@ export default function NavBar(props: NavBarProps) {
                 </div>
                 <div className={styles.right}>
                     {!props.token ? (<><button onClick={goToLogin}>ENTRAR</button>
-                        <button onClick={goToRegister}>CADASTRE-SE</button></>) : <p>Olá, {props.name}</p>}
+                        <button onClick={goToRegister}>CADASTRE-SE</button></>) : <><p>Olá, {props.name}</p> <button onClick={logout}>X</button></>}
 
                 </div>
             </div>
