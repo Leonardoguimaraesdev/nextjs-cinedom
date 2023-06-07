@@ -25,8 +25,6 @@ const readUser = async (queryUser) => {
 
         const users = await User.findOne(queryUser);
 
-        console.log(users)
-
         return users;
     } catch (error) {
         console.error('Erro ao ler usuários:', error);

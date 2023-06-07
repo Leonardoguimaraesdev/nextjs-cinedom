@@ -34,6 +34,7 @@ export default function Input() {
     const [confirmPassword, setConfirmPassword] = useState<string>('')
 
     const [checkPassword, setCheckPassword] = useState<any>('')
+    const [checkEmail, setCheckEmail] = useState<any>('')
 
     const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
         resolver: yupResolver(schema)
@@ -46,6 +47,7 @@ export default function Input() {
             setCheckPassword(dif)
         } else {
             const url = '/api/register';
+            
             const data = {
                 name: name,
                 email: email,
@@ -60,21 +62,17 @@ export default function Input() {
                     },
                     body: JSON.stringify(data),
                 });
-                
-                if(response.ok){
+
+                if (response.ok) {
                     router.push('/login')
+                } else {
+                    const emailExist = <p>E-mail já existe</p>
+                    setCheckEmail(emailExist)
                 }
 
-
             } catch (error) {
-                // Tratar erros de conexão ou outras falhas
                 console.error('Erro na comunicação com a API:', error);
-                // Exiba uma mensagem de erro para o usuário
             }
-
-            // Cookies.set('name', name)
-            // Cookies.set('email', email)
-            // router.push('/login')
 
         }
     };
@@ -90,6 +88,7 @@ export default function Input() {
                     onChange={e => setName(e.target.value)}
                     required
                 />
+                {checkEmail}
                 <input
                     type="email"
                     {...register('email')}

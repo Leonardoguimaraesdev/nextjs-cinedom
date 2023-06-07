@@ -5,6 +5,8 @@ import { useState } from 'react'
 
 interface NavBarProps {
     page: string
+    token: boolean
+    name: string
 }
 
 export default function NavBar(props: NavBarProps) {
@@ -12,7 +14,6 @@ export default function NavBar(props: NavBarProps) {
     const router = useRouter()
 
     const [array, setArray] = useState(['HOME', 'TODOS FILMES', 'COMÉDIA', 'DRAMA', 'AÇÃO', 'ROMANCE', 'ANIMAÇÂO'])
-
 
 
 
@@ -59,8 +60,9 @@ export default function NavBar(props: NavBarProps) {
                     <Image className={styles.img} alt='Dog with popcorn and 3dglass' src='/cinedom.png' width={180} height={180} />
                 </div>
                 <div className={styles.right}>
-                    <button onClick={goToLogin}>ENTRAR</button>
-                    <button onClick={goToRegister}>CADASTRE-SE</button>
+                    {!props.token ? (<><button onClick={goToLogin}>ENTRAR</button>
+                        <button onClick={goToRegister}>CADASTRE-SE</button></>) : <p>Olá, {props.name}</p>}
+
                 </div>
             </div>
             <div className={styles.bottom}>

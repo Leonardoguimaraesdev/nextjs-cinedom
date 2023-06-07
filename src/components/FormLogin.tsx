@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from '../styles/Form.module.scss'
 import { useRouter } from 'next/router'
 import Link from "next/link";
+import Cookies from 'js-cookie';
 
 export default function Input() {
 
@@ -10,7 +11,9 @@ export default function Input() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const [checkEmailExist, setCheckEmailExist] = useState<any>('')
+    const [checkCorrectLogin, setCheckCorrectLogin] = useState<any>('')
+
+
 
     const handleSubmit = async (event: any) => {
 
@@ -19,6 +22,7 @@ export default function Input() {
         const url = '/api/login';
         const data = {
             email: email,
+            password: password
         };
 
         try {
@@ -32,10 +36,14 @@ export default function Input() {
 
             if (response.ok) {
                 const responseData = await response.json();
-                console.log('Login realizado com sucesso!', responseData);
+                const token = responseData.token
+
+                Cookies.set('token', token);
                 router.push('/');
             } else {
                 const errorData = await response.json();
+                const err = <p>{errorData.err}</p>
+                setCheckCorrectLogin(err)
                 console.error('Erro na resposta da API:', errorData);
             }
 
@@ -48,7 +56,7 @@ export default function Input() {
         <section className={styles.form}>
             <form onSubmit={handleSubmit}>
                 <h1 className={styles.loginTittle}>LOGIN</h1>
-                {checkEmailExist}
+                {checkCorrectLogin}
                 <input
                     type="email"
                     value={email}
