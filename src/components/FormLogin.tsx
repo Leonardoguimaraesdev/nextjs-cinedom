@@ -37,8 +37,10 @@ export default function Input() {
             if (response.ok) {
                 const responseData = await response.json();
                 const token = responseData.token
+                const name = responseData.name
 
                 Cookies.set('token', token);
+                Cookies.set('name', name);
                 router.push('/');
             } else {
                 const errorData = await response.json();

@@ -16,26 +16,26 @@ export async function getServerSideProps() {
   };
 }
 
-
 export default function Romance({filmes}:any) {
 
-  const [tokenOn, setTokenOn] = useState(false)
+  const [token, setToken] = useState(false)
   const [name, setName] = useState('')
 
   useEffect(() => {
-    const token = Cookies.get('token')
-    if (token) {
-      setName('leonardo')
-      setTokenOn(true)
-    } else {
-      setTokenOn(false)
-    }
+    const cookie = Cookies.get('token')
+    const name = Cookies.get('name')
 
+    if (cookie && name) {
+      setToken(true)
+      setName(name)
+    }
+    
   }, [])
+
 
   return (
     <div className={styles.main}>
-        <NavBar page='ROMANCE'token={tokenOn} name={name}/>
+        <NavBar page='ROMANCE'token={token} nameToken={name}/>
         <ContentFilms films={filmes}/>
         <Footer />
     </div>

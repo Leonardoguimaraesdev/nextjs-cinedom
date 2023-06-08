@@ -78,7 +78,17 @@
                 color:#fff;
             }
 
-            button {
+            .logout{
+                border: 2px solid red;
+                background-color: rgba(0, 0, 0, 0);
+                color: red;
+                padding: 5px 10px;
+                margin: 13px;
+                cursor: pointer;
+
+            }
+
+            .login, .register {
                 display: flex;
                 align-items: center;
                 justify-content: center;

@@ -24,7 +24,7 @@ export default async function login(req, res) {
                 }
 
                 if (result) {
-                    const secretKey = process.env.SECRET_KEY
+                    const secretKey = process.env.SECRET
 
                     const { _id } = user
                     const { name } = user

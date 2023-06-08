@@ -4,30 +4,29 @@ import CineImages from '@/components/CineImages'
 import Footer from '@/components/Footer'
 import styles from '@/styles/Home.module.scss'
 import { useEffect, useState } from 'react'
-import Cookies from 'js-cookie';
-import jwt from 'jsonwebtoken';
-
+import Cookies from 'js-cookie'
 
 export default function Home() {
+  
 
-
-  const [tokenOn, setTokenOn] = useState(false)
+  const [token, setToken] = useState(false)
   const [name, setName] = useState('')
 
   useEffect(() => {
-    const token = Cookies.get('token')
-    if (token) {
-      setName('leonardo')
-      setTokenOn(true)
-    } else {
-      setTokenOn(false)
-    }
+    const cookie = Cookies.get('token')
+    const name = Cookies.get('name')
 
+    if (cookie && name) {
+      setToken(true)
+      setName(name)
+    }
+    
   }, [])
+
 
   return (
     <div className={styles.main}>
-      <NavBar page='HOME' token={tokenOn} name={name}/>
+      <NavBar page='HOME' token={token} nameToken={name} />
       <Banners />
       <CineImages />
       <Footer />
