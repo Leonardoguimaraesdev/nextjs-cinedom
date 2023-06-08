@@ -1,7 +1,7 @@
 import userController from '../../database/controllers/UserController'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken';
-import cors from '../../middleware/cors';
+import cors from '../../../middleware/cors';
 
 
 export default cors(async function login(req, res) {
