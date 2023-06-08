@@ -62,6 +62,7 @@ export default function Input() {
                 <input
                     type="email"
                     value={email}
+                    maxLength={60}
                     placeholder="Email"
                     onChange={e => setEmail(e.target.value)}
                     required
@@ -69,6 +70,7 @@ export default function Input() {
                 <input
                     type="password"
                     value={password}
+                    maxLength={30}
                     placeholder="Senha"
                     onChange={e => setPassword(e.target.value)}
                     required

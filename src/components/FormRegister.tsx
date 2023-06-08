@@ -83,6 +83,7 @@ export default function Input() {
                 <h1 className={styles.registerTittle}>Cadastrar</h1>
                 <input
                     type="name"
+                    maxLength={15}
                     value={name}
                     placeholder="Nome"
                     onChange={e => setName(e.target.value)}
@@ -91,6 +92,7 @@ export default function Input() {
                 {checkEmail}
                 <input
                     type="email"
+                    maxLength={60}
                     {...register('email')}
                     onChange={e => setEmail(e.target.value)}
                     placeholder="Seu e-mail"
@@ -98,6 +100,7 @@ export default function Input() {
                 {errors.password && <p>{errors.password.message}</p>}
                 <input
                     type="password"
+                    maxLength={30}
                     {...register('password')}
                     onChange={e => setPassword(e.target.value)}
                     placeholder="Sua senha"
@@ -105,6 +108,7 @@ export default function Input() {
                 {checkPassword}
                 <input
                     type="password"
+                    maxLength={30}
                     value={confirmPassword}
                     placeholder="Confirme a sua senha"
                     onChange={e => setConfirmPassword(e.target.value)}

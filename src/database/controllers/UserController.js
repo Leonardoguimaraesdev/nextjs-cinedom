@@ -10,8 +10,6 @@ const saveUser = async (queryUser) => {
         const newUser = new User(queryUser);
         await newUser.save();
 
-        // database.disconnect();
-
         return true;
     } catch (error) {
         console.error('Erro ao salvar usuário:', error);
