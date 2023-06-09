@@ -18,10 +18,12 @@ const saveUser = async (queryUser) => {
 };
 
 const readUser = async (queryUser) => {
+    console.log("Estou pronto para fazer a leitura")
     try {
         if (!database.connect()) return false;
 
         const users = await User.findOne(queryUser);
+        console.log("Após leitura")
 
         return users;
     } catch (error) {
