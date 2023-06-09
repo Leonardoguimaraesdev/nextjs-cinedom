@@ -1,9 +1,17 @@
 import userController from '../../database/controllers/UserController'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken';
+import NextCors from 'nextjs-cors'
 
 
 export default async function login(req, res) {
+
+    await NextCors(req, res, {
+        // Options
+        methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+        origin: '*',
+        optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+    });
 
     try {
         const { email, password } = req.body
@@ -33,7 +41,7 @@ export default async function login(req, res) {
                     const payload = { _id, name, email };
 
                     const token = jwt.sign(payload, secretKey);
-                    
+
                     res.status(200).json(token);
                 } else {
                     const err = { err: 'Senha incorreta' }
