@@ -15,7 +15,6 @@ export default async function login(req, res) {
 
     try {
         const { email, password } = req.body
-
         const user = await userController.readUser({ email: email });
 
         if (user === null) {

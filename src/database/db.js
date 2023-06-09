@@ -2,8 +2,7 @@ import mongoose from "mongoose";
 
 mongoose.set('strictQuery', true)
 
-const dbname = 'cinedom'
-const url = `mongodb+srv://leonardoguimaraesdev:${process.env.MONGO_PWD}@cluster0.qsffpx9.mongodb.net/${dbname}?retryWrites=true&w=majority`
+const url = process.env.MONGO_URL
 
 const connect = async () => {
     return await mongoose.connect(url)

@@ -14,6 +14,8 @@ export default async function register(req, res) {
 
     try {
         const { email } = req.body
+        console.log('Cheguei aqui')
+
         const user = await userController.readUser({ email: email });
 
         if (user === null) {
