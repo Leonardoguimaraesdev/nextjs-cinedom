@@ -3,6 +3,7 @@ import styles from '../styles/Form.module.scss'
 import { useRouter } from 'next/router'
 import Link from "next/link";
 import Cookies from 'js-cookie';
+import jwt from 'jsonwebtoken'
 
 export default function Input() {
 
@@ -36,10 +37,19 @@ export default function Input() {
 
             if (response.ok) {
                 const responseData = await response.json();
-                const token = responseData.token
-                const name = responseData.name
 
-                Cookies.set('token', token);
+                const responseUser = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/me`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(responseData),
+                });
+
+                const responseUserData = await responseUser.json()
+                const name = responseUserData.name
+
+                Cookies.set('token', responseData);
                 Cookies.set('name', name);
                 router.push('/');
             } else {

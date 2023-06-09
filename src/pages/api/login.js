@@ -1,10 +1,9 @@
 import userController from '../../database/controllers/UserController'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken';
-import cors from '../../../middleware/cors';
 
 
-export default cors(async function login(req, res) {
+export default async function login(req, res) {
 
     try {
         const { email, password } = req.body
@@ -34,10 +33,8 @@ export default cors(async function login(req, res) {
                     const payload = { _id, name, email };
 
                     const token = jwt.sign(payload, secretKey);
-
-                    payload.token = token
-
-                    res.status(200).json(payload);
+                    
+                    res.status(200).json(token);
                 } else {
                     const err = { err: 'Senha incorreta' }
                     res.status(404).json(err);
@@ -50,4 +47,4 @@ export default cors(async function login(req, res) {
         console.error('Erro ao buscar usuário:', error);
         res.status(500).send('Internal Server Error');
     }
-})
+}

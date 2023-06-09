@@ -1,9 +1,8 @@
 import userController from '../../database/controllers/UserController'
 import bcrypt from 'bcrypt'
-import cors from '../../../middleware/cors';
 
 
-export default cors(async function register(req, res) {
+export default async function register(req, res) {
 
     try {
         const { email } = req.body
@@ -49,4 +48,4 @@ export default cors(async function register(req, res) {
     }
 
 
-})
+}
