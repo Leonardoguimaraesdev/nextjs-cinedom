@@ -6,7 +6,10 @@ export default async function register(req, res) {
 
     try {
         const { email } = req.body
+        console.log("Antes de acessar o banco de dadados para leitura apenas ")
+
         const user = await userController.readUser({ email: email });
+        console.log("Depois de acessar o banco de dadados para leitura apenas ")
 
         if (user === null) {
 
@@ -34,6 +37,8 @@ export default async function register(req, res) {
                     .catch(err => {
                         console.log(err)
                     })
+                    console.log("Depois de acessar o banco de dadados para Salvar")
+
 
 
                 res.status(200).json(response);

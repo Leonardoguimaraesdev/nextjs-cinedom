@@ -7,9 +7,10 @@ export default async function login(req, res) {
 
     try {
         const { email, password } = req.body
+        console.log("Antes de acessar o banco de dadados ")
 
         const user = await userController.readUser({ email: email });
-        console.log("Cheguei aqui agora")
+        console.log("Depois de acessar o banco de dadados ")
         if (user === null) {
             const err = { err: 'E-mail não cadastrado' }
             res.status(404).json(err);
