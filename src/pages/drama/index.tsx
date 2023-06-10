@@ -16,29 +16,42 @@ export async function getServerSideProps() {
   };
 }
 
-
-export default function Drama({filmes}:any) {
-
-  const [token, setToken] = useState(false)
-  const [name, setName] = useState('')
+export default function Drama({ filmes }: any) {
+  const [token, setToken] = useState(false);
+  const [name, setName] = useState('');
+  const [filmsArray, setFilmsArray] = useState<any>([]);
 
   useEffect(() => {
-    const cookie = Cookies.get('token')
-    const name = Cookies.get('name')
+    const categoryFilm = () => {
+      if (filmes) {
+        const dramaFilms = filmes.filter((item: any) => item.categoria === 'drama');
+        setFilmsArray(dramaFilms);
+      }
+    };
+
+    categoryFilm();
+  }, []);
+
+  useEffect(() => {
+    const cookie = Cookies.get('token');
+    const name = Cookies.get('name');
 
     if (cookie && name) {
-      setToken(true)
-      setName(name)
+      setToken(true);
+      setName(name);
     }
-    
-  }, [])
+  }, []);
 
+  useEffect(() => {
+    const dramaFilms = filmes.filter((item: any) => item.categoria === 'drama');
+    setFilmsArray(dramaFilms);
+  }, [filmes]);
 
   return (
     <div className={styles.main}>
-        <NavBar page='DRAMA'token={token} nameToken={name}/>
-        <ContentFilms films={filmes}/>
-        <Footer />
+      <NavBar page="DRAMA" token={token} nameToken={name} />
+      <ContentFilms films={filmsArray} />
+      <Footer />
     </div>
-  )
+  );
 }

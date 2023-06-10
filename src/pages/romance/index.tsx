@@ -16,7 +16,20 @@ export async function getServerSideProps() {
   };
 }
 
-export default function Romance({filmes}:any) {
+export default function Romance({ filmes }: any) {
+
+  const [filmsArray, setFilmsArray] = useState<any>([])
+
+  useEffect(() => {
+    const categoryFilm = () => {
+      const dramaFilms = filmes.filter((item: any) => item.categoria === 'romance');
+      setFilmsArray(dramaFilms);
+    };
+
+    categoryFilm();
+  }, []);
+
+
 
   const [token, setToken] = useState(false)
   const [name, setName] = useState('')
@@ -29,15 +42,15 @@ export default function Romance({filmes}:any) {
       setToken(true)
       setName(name)
     }
-    
+
   }, [])
 
 
   return (
     <div className={styles.main}>
-        <NavBar page='ROMANCE'token={token} nameToken={name}/>
-        <ContentFilms films={filmes}/>
-        <Footer />
+      <NavBar page='ROMANCE' token={token} nameToken={name} />
+      <ContentFilms films={filmsArray} />
+      <Footer />
     </div>
   )
 }

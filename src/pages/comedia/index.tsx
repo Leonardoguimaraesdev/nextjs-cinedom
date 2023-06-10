@@ -22,6 +22,19 @@ export default function Comedy({filmes}:any) {
   const [token, setToken] = useState(false)
   const [name, setName] = useState('')
 
+  const [filmsArray, setFilmsArray] = useState<any>([]);
+
+  useEffect(() => {
+    const categoryFilm = () => {
+      if (filmes) {
+        const dramaFilms = filmes.filter((item: any) => item.categoria === 'comedia');
+        setFilmsArray(dramaFilms);
+      }
+    };
+
+    categoryFilm();
+  }, []);
+
   useEffect(() => {
     const cookie = Cookies.get('token')
     const name = Cookies.get('name')
@@ -37,7 +50,7 @@ export default function Comedy({filmes}:any) {
   return (
     <div className={styles.main}>
         <NavBar page='COMÉDIA'token={token} nameToken={name}/>
-        <ContentFilms films={filmes}/>
+        <ContentFilms films={filmsArray}/>
         <Footer />
     </div>
   )

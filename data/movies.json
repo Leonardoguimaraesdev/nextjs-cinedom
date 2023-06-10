@@ -1,304 +1,185 @@
 {
   "filmes": [
     {
-      "nome": "Aventuras Caninas",
-      "categoria": "ação",
-      "sinopse": "Um grupo de cães corajosos parte em uma missão perigosa para salvar a cidade.",
-      "trailer": "https://www.youtube.com/watch?v=trailer1",
-      "elenco": [
-        "John Dogson",
-        "Emma Pugson",
-        "Charlie Retriever"
-      ],
-      "direcao": "Michael Bark"
+      "nome": "Marley & Eu",
+      "categoria": "comedia",
+      "sinopse": "John (Owen Wilson) e Jennifer Grogan (Jennifer Aniston) casaram-se recentemente e decidiram começar nova vida em West Palm Beach, na Flórida. Lá, eles trabalham em jornais concorrentes, compram um imóvel e enfrentam os desafios de uma vida de casal. Indeciso sobre sua capacidade em ser pai, John busca o conselho de seu colega Sebastian (Eric Dane), que sugere que compre um cachorro para a esposa. John aceita a sugestão e adota Marley, um labrador de 5 kg que logo se transforma em um grande cachorro de 45 kg, o que torna a casa deles um caos.",
+      "trailer": "zNKtwTDIszE",
+      "image": "marleyeeu.jpg",
+      "elenco":"Eric Dane, Jennifer Aniston, Owen Wilson",
+      
+      "direcao": "David Frankel"
     },
     {
-      "nome": "Rindo com Cachorros",
-      "categoria": "ação",
-      "sinopse": "Uma comédia hilariante repleta de travessuras caninas.",
-      "trailer": "https://www.youtube.com/watch?v=trailer2",
-      "elenco": [
-        "Buddy Labrador",
-        "Lucy Spaniel",
-        "Max Terrier"
-      ],
-      "direcao": "Sarah Woof"
+      "nome": "Beethoven",
+      "categoria": "comedia",
+      "sinopse": "A famíla Newton vive em uma casa confortável, mas parece que falta algo. Este vazio é preenchido quando um mascote vai morar lá, sendo que na verdade este filhote é um imenso cão são bernardo, que traz alegrias e também muitos tumultos para os Newton. Paralelamente Herman Varnick (Dean Jones), o veterinário do local, tem uma secreta e horrível segunda atividade que requer diversos cachorros para experimentos, sendo que Beethoven está na lista de Varnick.",
+      "trailer": "zDQHwzF1n4U",
+      "image": "beethoven.webp",
+      "elenco":"Nicholle Tom, Bonnie Hunt, Charles Grodin",
+      "direcao": "Brian Levant"
     },
     {
-      "nome": "Um Amor de Patas",
-      "categoria": "ação",
-      "sinopse": "Um cachorro solitário encontra o amor de sua vida em uma jornada inesquecível.",
-      "trailer": "https://www.youtube.com/watch?v=trailer3",
-      "elenco": [
-        "Rocky Rottweiler",
-        "Molly Dalmatian",
-        "Bella Beagle"
-      ],
-      "direcao": "David Wagman"
+      "nome": "101 Dálmatas",
+      "categoria": "animacao",
+      "sinopse": "Em 101 Dálmatas, Anita (Lisa Davis/ Simone de Morais) e Roger (Ben Wright/ Helio Colonna) possuem um casal de dálmatas chamado Pongo (Rod Taylor/ Domingos Martins) e Prenda (Cate Bauer/ Maria Alice Barreto). Quando a fêmea acaba de dar a luz a 15 filhotes, Cruela De Vil (Betty Lou Gerson/ Olga Nobre), uma antiga amiga de Anita, rica e viciada em roupas de pele de animais, se propõe a comprá-los. Roger nega vender os filhotes, pois desconfia que ela queira transformar os cachorrinhos em casacos de pele. Indignada, Cruela vai contar com seus capangas para roubar os tão almejados filhotes.",
+      "trailer": "HgC2cISSBy0",
+      "image": "dalmatasanimacao.webp",
+      "elenco":"Hélio Colonna, Lisa Davis, Simone de Morais",
+      "direcao": "Wolfgang Reitherman, Hamilton Luske, Clyde Geronimi"
     },
     {
-      "nome": "O Destino dos Cães",
-      "categoria": "ação",
-      "sinopse": "Dois cães valentes embarcam em uma missão épica para proteger seu território.",
-      "trailer": "https://www.youtube.com/watch?v=trailer4",
-      "elenco": [
-        "Cooper Husky",
-        "Lola Bulldog",
-        "Max Terrier"
-      ],
-      "direcao": "Jennifer Barks"
+      "nome": "Lassie",
+      "categoria": "aventura",
+      "sinopse": "A família Turner decide começar uma nova vida e decide ir morar na Virginia. A mudança mexe com o emocional de todos, sobretudo o jovem Matt (Thomas Guiry), que se sente perdido e solitário. Um belo dia, os Turner conhecem uma acolhedora cadela da raça collie que os ajudará a adaptar-se à nova vizinhança.",
+      "trailer": "bu5gqOmzegk",
+      "image": "lassie.jpg",
+      "elenco":"Jon Tenney, Helen Slater, Tom Guiry",
+      "direcao": "Daniel Petrie"
     },
     {
-      "nome": "Guardiões Caninos",
-      "categoria": "ação",
-      "sinopse": "Um grupo de cães heróis se unem para proteger a cidade dos vilões.",
-      "trailer": "https://www.youtube.com/watch?v=trailer5",
-      "elenco": [
-        "Buddy Labrador",
-        "Daisy Golden",
-        "Rocky Rottweiler"
-      ],
-      "direcao": "Alex Woofman"
-    },
-    {
-      "nome": "A Vida é Uma Festa",
-      "categoria": "comédia",
-      "sinopse": "Uma comédia animada sobre um cachorro que adora festas e se mete em confusões.",
-      "trailer": "https://www.youtube.com/watch?v=trailer6",
-      "elenco": [
-        "Max Terrier",
-        "Lucy Spaniel",
-        "Charlie Retriever"
-      ],
-      "direcao": "Emily Wagster"
-    },
-    {
-      "nome": "O Cão que Ri por Último",
-      "categoria": "comédia",
-      "sinopse": "Um cachorro engraçado faz de tudo para alegrar o dia de seus donos.",
-      "trailer": "https://www.youtube.com/watch?v=trailer7",
-      "elenco": [
-        "Buddy Labrador",
-        "Molly Dalmatian",
-        "Daisy Golden"
-      ],
-      "direcao": "Jason Woofman"
-    },
-    {
-      "nome": "Amor e Lambidas",
-      "categoria": "comédia",
-      "sinopse": "Um romance hilário entre dois cachorros que vivem situações cômicas.",
-      "trailer": "https://www.youtube.com/watch?v=trailer8",
-      "elenco": [
-        "Rocky Rottweiler",
-        "Lola Bulldog",
-        "Bella Beagle"
-      ],
-      "direcao": "Sophia Barkman"
-    },
-    {
-      "nome": "O Cachorro Sortudo",
-      "categoria": "comédia",
-      "sinopse": "Um cachorro trapalhão acaba se tornando a sorte que sua família precisava.",
-      "trailer": "https://www.youtube.com/watch?v=trailer9",
-      "elenco": [
-        "Cooper Husky",
-        "Emma Pugson",
-        "Max Terrier"
-      ],
-      "direcao": "Daniel Wagster"
-    },
-    {
-      "nome": "Deu a Louca nos Cachorros",
-      "categoria": "comédia",
-      "sinopse": "Uma confusão divertida acontece quando todos os cachorros da cidade começam a agir estranhamente.",
-      "trailer": "https://www.youtube.com/watch?v=trailer10",
-      "elenco": [
-        "Buddy Labrador",
-        "Lucy Spaniel",
-        "Daisy Golden"
-      ],
-      "direcao": "Oliver Woofman"
-    },
-    {
-      "nome": "A Última Lambida",
+      "nome": "Sempre ao seu lado",
       "categoria": "drama",
-      "sinopse": "Uma história emocionante sobre um cachorro que enfrenta grandes desafios em sua vida.",
-      "trailer": "https://www.youtube.com/watch?v=trailer11",
-      "elenco": [
-        "Rocky Rottweiler",
-        "Molly Dalmatian",
-        "Charlie Retriever"
-      ],
-      "direcao": "Samantha Barkson"
+      "sinopse": "Parker Wilson (Richard Gere) é um professor universitário que, ao retornar do trabalho, encontra na estação de trem um filhote de cachorro da raça akita, conhecido por sua lealdade. Sem ter como deixá-lo na estação, Parker o leva para casa mesmo sabendo que Cate (Joan Allen), sua esposa, é contra a presença de um cachorro. Aos poucos Parker se afeiçoa ao filhote, que tem o nome Hachi escrito na coleira, em japonês. Cate cede e aceita sua permanência. Hachi cresce e passa a acompanhar Parker até a estação de trem, retornando ao local no horário em que o professor está de volta. Até que um acontecimento inesperado altera sua vida.",
+      "trailer": "UFY8vW5IedY",
+      "image": "sempreaoseulado.jpg",
+      "elenco":"Sarah Roemer, Joan Allen, Richard Gere",
+      "direcao": "Lasse Hallström"
     },
     {
-      "nome": "Para Sempre Juntos",
+      "nome": "Benji",
+      "categoria": "aventura",
+      "sinopse": "Carter (Gabriel Bateman) e Frankie (Darby Camp) são irmãos e passam boa parte do dia sozinhos devido  ao intenso trabalho da mãe deles, Whitney (Kiele Sanchez). Um dia, Carter encontra na rua um cachorro vira-lata, ao qual sente imediato afeto. Após atraí-lo com morangos, ele o segue até sua casa. Logo as crianças passam a cuidá-lo às escondidas, já que têm a mais absoluta certeza que a mãe não lhes deixará ficar com a nova mascote, já nomeada Benji.",
+      "trailer": "jz39bGCfYmw",
+      "image": "benji.jpg",
+      "elenco":"Kiele Sanchez, Darby Camp, Gabriel Bateman",
+      "direcao": "Brandon Camp"
+    },
+    {
+      "nome": "A dama e o vagabundo",
+      "categoria": "animacao",
+      "sinopse": "Dama (Barbara Luddy/ Selma Lopes) é uma cadelinha da raça cocker spaniel, que vive na mordomia e no acolhimento da casa de seus donos, a aristocrata Querida (Peggy Lee/ Sônia Barreto) e seu esposo Jim (Lee Millar/ Ênio Santos). Ela sempre recebeu carinho e tudo que queria, só que com Querida grávida, ela começa a se sentir em segundo plano. É justamente nessa fase que ela conhece Vagabundo (Larry Roberts/ Aloysio de Oliveira). Ele é um cachorro de rua, vira-lata e que tem se virar para sobreviver. Até que um dia a dona de Dama viaja e deixa o bebê recém-nascido sob os cuidados de Tia Sarah (Vera Felton/ Estelita Bell) , uma mulher que tem dois malvados gatos siameses. Eles armam uma tremenda confusão e culpam a cadelinha, que para se proteger tem de fugir. Dama então se perde na cidade, e vai depender da ajuda de Vagabundo para sobreviver e também para voltar aos seus donos humanos.",
+      "trailer": "rcT_fWnm1o4",
+      "image": "adamaeovagabundo.webp",
+      "elenco":"Selma Lopes, Larry Roberts, Aloysio de Oliveira",
+      "direcao": "Wilfred Jackson, Clyde Geronimi, Hamilton Luske"
+    },
+    {
+      "nome": "A dama e o vagabundo live action",
+      "categoria": "romance",
+      "sinopse": "Relançamento do clássico de 1955, que conta a história de amor entre a Dama, uma cocker spaniel mimada, e um vira-lata chamado Vagabundo, que salva a cadelinha do perigo de vagar sozinha perdida pelas ruas. ",
+      "trailer": "odFM3ecQaPE",
+      "image": "adamaeovagabundoliveaction.jpg",
+      "elenco":"Thomas Mann (II), Tessa Thompson, Justin Theroux",
+      "direcao": "Charlie Bean"
+    },
+    {
+      "nome": "K-9",
+      "categoria": "aventura",
+      "sinopse": "Michael Dooley (James Belushi) é um policial extravagante que necessita de alguma ajuda para lutar contra Lyman (Kevin Tighe), um traficante de drogas que tem tentado matá-lo. Um conhecido lhe dá Jerry Lee, um pastor alemão que foi treinado para cheirar drogas. Com sua ajuda Dooley espera colocar seu inimigo atrás das grades, mas Jerry Lee tem uma personalidade bem própria e trabalha apenas quando quer. Por sua vez, o cachorro é ótimo para destruir o carro, a casa e a vida sexual de Dooley. Além disto, Tracy (Mel Harris), a namorada de Michael Dooley, é seqüestrada por Lyman, que assim pretende deter Dooley, pois Lyman está prestes a entregar um carregamento de drogas que vale alguns milhões de dólares.",
+      "trailer": "Thxn5yIBYSI",
+      "image": "k9.jpg",
+      "elenco":"Kevin Tighe, Mel Harris, James Belushi",
+      "direcao": "Rod Daniel"
+    },
+    {
+      "nome": "Quatro Vidas de um Cachorro",
+      "categoria": "aventura",
+      "sinopse": "Em Quatro Vidas de um Cachorro, um cachorro morre e reencarna diversas vezes. Em suas reencarnações, embora encontre novas pessoas e viva muitas aventuras, ele mantém sempre a esperança de reencontrar o seu primeiro dono, Ethan, seu melhor amigo e o grande amor de sua vida.",
+      "trailer": "zPUKMxBS7JQ",
+      "image": "quatrovidasdeumcachorro.webp",
+      "elenco":"John Ortiz, Britt Robertson, K.J. Apa",
+      "direcao": "Lasse Hallström"
+    },
+    {
+      "nome": "Bolt: Supercão",
+      "categoria": "animacao",
+      "sinopse": "Bolt (John Travolta) é um cachorro que estrela uma série de TV, na qual possui superpoderes. Sua companheira é Penny (Miley Cyrus), com quem vive diversas aventuras. Entretanto Bolt não sabe que o mundo que o cerca é falso, acreditando que realmente possui dons especiais. Quando, nas gravações de um dos episódios, Penny é sequestrada pelo dr. Calico (Malcolm McDowell), o vilão da série, ele consegue fugir do furgão em que vive e parte atrás dela. Ao lidar com a vida real é que, aos poucos, ele toma consciência de que não tem superpoderes e é um cachorro normal.",
+      "trailer": "YnplnVz5R9E",
+      "image": "boltosupercao.webp",
+      "elenco":"Susie Essman, Miley Cyrus, John Travolta",
+      "direcao": "Chris Williams (II), Byron Howard"
+    },
+    {
+      "nome": "Um Hotel Bom pra Cachorros",
+      "categoria": "comedia",
+      "sinopse": "Um Hotel Bom pra Cachorro acompanha os irmãos Andi (Emma Roberts) e Bruce (Jake T. Austin) que moram numa casa onde há uma rígida regra: é proibido ter animais de estimação. Isto faz com que eles sempre tenham que arrumar meios para esconder Sexta-feira, seu cachorro faminto. Um dia eles encontram, por acaso, um hotel abandonado onde já vivem dois cães de rua. Os irmãos chamam seus amigos e, juntos, decidem transformar o local em um hotel para vira-latas.",
+      "trailer": "mn1ZgALaCko",
+      "image": "umhotelbomparacachorros.jpg",
+      "elenco":"Lisa Kudrow, Jake T. Austin, Emma Roberts",
+      "direcao": "Thor Freudenthal"
+    },
+    {
+      "nome": "Marmaduke",
+      "categoria": "comedia",
+      "sinopse": "Marmaduke (Owen Wilson) é um dog alemão adolescente, bastante bagunceiro e que pesa 90 kg. Ele vive com a família Winslow e com ela se muda para a Califórnia. Ao chegar, Marmaduke se apaixona por Jezebel (Stacy Ferguson), uma linda cadela afghan. Só que para conquistá-la precisará enfrentar diversos desafios.",
+      "trailer": "qnuewICm_qE",
+      "image": "marmaduke.jpg",
+      "elenco":"Emma Stone, Owen Wilson, Lee Pace",
+      "direcao": "Tom Dey"
+    },
+    {
+      "nome": "A Caminho de Casa",
+      "categoria": "aventura",
+      "sinopse": "Em A Caminho de Casa, Lucas (Jonah Hauer-King) é um jovem estudante de medicina veterinária que tem grande conexão com os animais, e trabalha como voluntário em um hospital local. Um dia, ao tentar resgatar um grupo de gatos abandonados que vivem em um terreno baldio, ele acaba se deparando com a filhote Bella, uma cadelinha muito especial. Ele acaba levando a pequena para casa, também para servir de companhia à mãe (Ashley Judd), uma veterana que tenta superar o traumas da guerra. No entanto, a família é obrigada a mudar de casa para manter o animal - e nessa mudança, Bella acaba se perdendo de seus donos. Ela é encontrada pelo Controle de Animais na rua e acaba sendo levada para um abrigo muito distante de seus donos. Todavia, Bella, uma cachorra extremamente leal e corajosa, decide iniciar sozinha uma jornada de volta para a casa, enfrentando os mais variados desafios ao longo do caminho.",
+      "trailer": "iV8dqOKjWoc",
+      "image": "acaminhodecasa.jpg",
+      "elenco":"Jonah Hauer-King, Ashley Judd, Bryce Dallas Howard",
+      "direcao": "Charles Martin Smith"
+    },
+    {
+      "nome": "Juntos para sempre",
+      "categoria": "aventura",
+      "sinopse": "Depois de muitas vidas e aprendizados, Bailey vive tranquilamente com Hanna (Marg Helgenberger). Um dia, Gloria (Betty Gilpin), uma aspirante a cantora, aparece sem avisar na vida dos dois com uma notícia surpreendente: Hanna tem uma neta, chamada Clarity. Com o tempo, o cãozinho percebe como a menina é negligenciada pela mãe e decide que seu objetivo nesta vida é cuidar dela e protegê-la, incondicionalmente.",
+      "trailer": "S9TlurhP35U",
+      "image": "juntosparasempre.jpg",
+      "elenco":"Kathryn Prescott, Dennis Quaid, Josh Gad",
+      "direcao": "Gail Mancuso"
+    },
+    {
+      "nome": "Togo",
       "categoria": "drama",
-      "sinopse": "Um cachorro fiel e seu dono passam por várias dificuldades e aprendem importantes lições.",
-      "trailer": "https://www.youtube.com/watch?v=trailer12",
-      "elenco": [
-        "Cooper Husky",
-        "Lola Bulldog",
-        "Max Terrier"
-      ],
-      "direcao": "Jacob Wagman"
+      "sinopse": "A história de um homem (Willem Dafoe) e sua equipe de cães puxadores de trenó que transportaram remédios para a população do Alasca, a fim de combater uma epidemia, durante a década de 20.",
+      "trailer": "-d1L1jHCSpo",
+      "image": "togo.webp",
+      "elenco":"Christopher Heyerdahl, Julianne Nicholson, Willem Dafoe",
+      "direcao": "Ericson Core"
     },
     {
-      "nome": "O Cachorro Perdido",
+      "nome": "A Vida Secreta dos Bichos",
+      "categoria": "animacao",
+      "sinopse": "Max é um cachorro que mora em um apartamento de Manhattan. Quando sua querida dona traz para casa um novo cão chamado Duke, Max não gosta nada, já que seus privilégios parecem ter acabado. Mas logo eles vão ter que pôr as divergências de lado quando um incidente coloca os dois na mira da carrocinha. Enquanto tentam fugir, os animais da vizinhança se reúnem para o resgate e uma gangue de bichos que moram nos esgotos se mete no caminho da dupla.",
+      "trailer": "9Ia6FKg_IUU",
+      "image": "avidasecretadosbichos.jpg",
+      "elenco":"Tiago Abravanel, Louis C.K., Danton Mello",
+      "direcao": "Chris Renaud, Yarrow Cheney"
+    },
+    {
+      "nome": "A Vida Secreta dos Bichos 2",
+      "categoria": "animacao",
+      "sinopse": "Nova York. A vida de Max e Duke muda bastante quando sua dona tem um filho. De início eles não gostam nem um pouco deste pequeno ser que divide a atenção, mas aos poucos ele os conquista. Não demora muito para que Max se torne superprotetor em relação à criança, o que lhe causa uma coceira constante. Quando toda a família decide passar uns dias em uma fazenda, os cachorros enfrentam uma realidade completamente diferente com a qual estão acostumados.",
+      "trailer": "jwrEcGUqLpA",
+      "image": "avidasecretadosbichos2.jpg",
+      "elenco":"Kevin Hart, Patton Oswalt, Danton Mello",
+      "direcao": "Chris Renaud"
+    },
+    {
+      "nome": "Alfa",
       "categoria": "drama",
-      "sinopse": "Um cachorro se perde de sua família e embarca em uma jornada de volta para casa.",
-      "trailer": "https://www.youtube.com/watch?v=trailer13",
-      "elenco": [
-        "Buddy Labrador",
-        "Daisy Golden",
-        "Bella Beagle"
-      ],
-      "direcao": "Isabella Woofster"
+      "sinopse": "Após cair de um penhasco e se perder do seu grupo, o jovem Keda (Kodi Smit-McPhee) precisa sobreviver em meio a paisagens selvagens e encontrar o caminho de casa. Atacado por uma matilha, ele consegue ferir um dos lobos, mas decide não matar o animal. O jovem cuida dele e os dois começam uma relação de amizade.",
+      "trailer": "GDqNF_PUkaQ",
+      "image": "alpha.webp",
+      "elenco":"Marcin Kowalczyk, Jóhannes Haukur Jóhannesson, Kodi Smit-McPhee",
+      "direcao": "Albert Hughes"
     },
     {
-      "nome": "Coração Canino",
-      "categoria": "drama",
-      "sinopse": "Um cachorro com problemas de saúde e seu dono enfrentam juntos suas batalhas emocionais.",
-      "trailer": "https://www.youtube.com/watch?v=trailer14",
-      "elenco": [
-        "Max Terrier",
-        "Lucy Spaniel",
-        "Charlie Retriever"
-      ],
-      "direcao": "Gabriela Barks"
-    },
-    {
-      "nome": "O Cachorro Leal",
-      "categoria": "drama",
-      "sinopse": "A história tocante de um cachorro que permanece fiel ao seu dono em todas as circunstâncias.",
-      "trailer": "https://www.youtube.com/watch?v=trailer15",
-      "elenco": [
-        "Rocky Rottweiler",
-        "Molly Dalmatian",
-        "Emma Pugson"
-      ],
-      "direcao": "Lucas Wagster"
-    },
-    {
-      "nome": "Amor Canino",
-      "categoria": "romance",
-      "sinopse": "Um romance proibido entre dois cães de raças diferentes que enfrentam o preconceito.",
-      "trailer": "https://www.youtube.com/watch?v=trailer16",
-      "elenco": [
-        "Cooper Husky",
-        "Lola Bulldog",
-        "Daisy Golden"
-      ],
-      "direcao": "Victoria Woofman"
-    },
-    {
-      "nome": "Encontro à Beira do Lago",
-      "categoria": "romance",
-      "sinopse": "Dois cães se encontram em um lindo cenário e vivem uma história de amor inesquecível.",
-      "trailer": "https://www.youtube.com/watch?v=trailer17",
-      "elenco": [
-        "Buddy Labrador",
-        "Lucy Spaniel",
-        "Max Terrier"
-      ],
-      "direcao": "Natalie Wagster"
-    },
-    {
-      "nome": "Patas Entrelaçadas",
-      "categoria": "romance",
-      "sinopse": "Um romance doce e encantador entre dois cães que se conhecem em um parque.",
-      "trailer": "https://www.youtube.com/watch?v=trailer18",
-      "elenco": [
-        "Rocky Rottweiler",
-        "Molly Dalmatian",
-        "Charlie Retriever"
-      ],
-      "direcao": "Brandon Barkson"
-    },
-    {
-      "nome": "O Cachorro do Meu Coração",
-      "categoria": "romance",
-      "sinopse": "Um cachorro se torna o elo de um romance improvável entre duas pessoas.",
-      "trailer": "https://www.youtube.com/watch?v=trailer19",
-      "elenco": [
-        "Cooper Husky",
-        "Emma Pugson",
-        "Bella Beagle"
-      ],
-      "direcao": "Hannah Woofster"
-    },
-    {
-      "nome": "A Promessa de um Cachorro",
-      "categoria": "romance",
-      "sinopse": "Uma história de amor eterno entre um cachorro e seu dono ao longo dos anos.",
-      "trailer": "https://www.youtube.com/watch?v=trailer20",
-      "elenco": [
-        "Max Terrier",
-        "Lucy Spaniel",
-        "Daisy Golden"
-      ],
-      "direcao": "Nicholas Barks"
-    },
-    {
-      "nome": "Aventuras Caninas: O Filme",
-      "categoria": "animação",
-      "sinopse": "Uma animação divertida sobre um grupo de cães corajosos que salvam o mundo.",
-      "trailer": "https://www.youtube.com/watch?v=trailer21",
-      "elenco": [
-        "Buddy Labrador",
-        "Daisy Golden",
-        "Rocky Rottweiler"
-      ],
-      "direcao": "Olivia Woofman"
-    },
-    {
-      "nome": "A Turma dos Cachorros",
-      "categoria": "animação",
-      "sinopse": "Uma aventura animada com uma turma de cãezinhos adoráveis e suas travessuras.",
-      "trailer": "https://www.youtube.com/watch?v=trailer22",
-      "elenco": [
-        "Max Terrier",
-        "Molly Dalmatian",
-        "Charlie Retriever"
-      ],
-      "direcao": "Nathan Wagster"
-    },
-    {
-      "nome": "Cachorros e Amigos",
-      "categoria": "animação",
-      "sinopse": "Uma história encantadora sobre a amizade entre cães e outros animais.",
-      "trailer": "https://www.youtube.com/watch?v=trailer23",
-      "elenco": [
-        "Cooper Husky",
-        "Lucy Spaniel",
-        "Bella Beagle"
-      ],
-      "direcao": "Sophie Barkman"
-    },
-    {
-      "nome": "A Incrível Jornada Canina",
-      "categoria": "animação",
-      "sinopse": "Três cães corajosos embarcam em uma jornada emocionante para encontrar seus donos.",
-      "trailer": "https://www.youtube.com/watch?v=trailer24",
-      "elenco": [
-        "Buddy Labrador",
-        "Emma Pugson",
-        "Daisy Golden"
-      ],
-      "direcao": "William Woofster"
-    },
-    {
-      "nome": "Aventuras no Parque dos Cachorros",
-      "categoria": "animação",
-      "sinopse": "Um grupo de cães animados se diverte e enfrenta desafios em um parque temático.",
-      "trailer": "https://www.youtube.com/watch?v=trailer25",
-      "elenco": [
-        "Rocky Rottweiler",
-        "Molly Dalmatian",
-        "Max Terrier"
-      ],
-      "direcao": "Emily Barks"
+      "nome": "O Cão e a Raposa",
+      "categoria": "animacao",
+      "sinopse": "Um filhote de raposa órfão e um cachorrinho viram grandes amigos quando pequenos, mas a amizade deles se mostra impossível pois eles pertencem a mundos diferentes, e acabam tomando rumos distintos e se separando pelo destino. Quando adultos, eles se reencontram em uma situação que vai colocar à prova essa bela amizade e que talvez transforme os dois amigos de longa data em inimigos.",
+      "trailer": "z0hOPR5ub3E",
+      "image": "ocaoearaposa.webp",
+      "elenco":"Kurt Russell, Mickey Rooney, Jack Albertson",
+      "direcao": "Art Stevens, Ted Berman, Richard Rich"
     }
   ]
 }

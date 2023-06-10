@@ -22,6 +22,19 @@ export default function Action({filmes}:any) {
   const [token, setToken] = useState(false)
   const [name, setName] = useState('')
 
+  const [filmsArray, setFilmsArray] = useState<any>([]);
+
+  useEffect(() => {
+    const categoryFilm = () => {
+      if (filmes) {
+        const dramaFilms = filmes.filter((item: any) => item.categoria === 'aventura');
+        setFilmsArray(dramaFilms);
+      }
+    };
+
+    categoryFilm();
+  }, []);
+
   useEffect(() => {
     const cookie = Cookies.get('token')
     const name = Cookies.get('name')
@@ -36,8 +49,8 @@ export default function Action({filmes}:any) {
 
   return (
     <div className={styles.main}>
-        <NavBar page='AÇÃO' token={token} nameToken={name}/>
-        <ContentFilms films={filmes}/>
+        <NavBar page='AVENTURA' token={token} nameToken={name}/>
+        <ContentFilms films={filmsArray}/>
         <Footer />
     </div>
   )

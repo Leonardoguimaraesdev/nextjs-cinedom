@@ -4,9 +4,16 @@ import { useState } from 'react';
 import VideoModal from './VideoModal';
 import SinopseModal from './SinopseModal';
 
+interface FilmCardProps {
+    name: string
+    sinopse: string
+    trailer: string
+    image: string
+    elenco: string
+    direcao: string
+}
 
-
-export default function FilmCard() {
+export default function FilmCard(props:FilmCardProps) {
 
     const [isOverlayCard, setIsOverlayCard] = useState(false);
     const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -42,7 +49,7 @@ export default function FilmCard() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <Image className={styles.img} src='/DogCartaz.png' alt='Cartaz do filme' width={250} height={400} />
+            <Image className={styles.img} src={`/catalogMovies/${props.image}`} alt='Cartaz do filme' width={250} height={400} />
             {isOverlayCard && (
                 <div className={styles.overlay}>
                     <div className={styles.overlayButtons}>
@@ -53,12 +60,16 @@ export default function FilmCard() {
             )}
             <VideoModal
                 isOpen={isVideoModalOpen}
-                videoId="ZGkOik10Itg" // Substitua pelo ID do vídeo do YouTube desejado
+                videoId={props.trailer}
                 closeModal={handleCloseVideoModal}
             />
             <SinopseModal
                 isOpen={isSinopseModalOpen}
                 closeModal={handleCloseSinopseModal}
+                name={props.name}
+                sinopse={props.sinopse}
+                diretor={props.direcao}
+                elenco={props.elenco}
             />
         </div>
     )

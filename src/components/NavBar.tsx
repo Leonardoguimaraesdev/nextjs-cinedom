@@ -15,7 +15,7 @@ export default function NavBar(props: NavBarProps) {
 
     const router = useRouter()
 
-    const [array, setArray] = useState(['HOME', 'TODOS FILMES', 'COMÉDIA', 'DRAMA', 'AÇÃO', 'ROMANCE', 'ANIMAÇÂO'])
+    const [array, setArray] = useState(['HOME', 'TODOS FILMES', 'COMÉDIA', 'DRAMA', 'AVENTURA', 'ROMANCE', 'ANIMAÇÂO'])
 
     const changePage = (e: any) => {
 
@@ -31,8 +31,8 @@ export default function NavBar(props: NavBarProps) {
         if (e === 'DRAMA') {
             router.push('/drama')
         }
-        if (e === 'AÇÃO') {
-            router.push('/acao')
+        if (e === 'AVENTURA') {
+            router.push('/aventura')
         }
         if (e === 'ROMANCE') {
             router.push('/romance')
