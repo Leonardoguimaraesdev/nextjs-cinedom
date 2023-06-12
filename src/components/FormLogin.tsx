@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import styles from '../styles/Form.module.scss'
 import { useRouter } from 'next/router'
 import Link from "next/link";
 import Cookies from 'js-cookie';
-import jwt from 'jsonwebtoken'
+import MeuContexto from './MeuContexto'
 
 export default function Input() {
 
@@ -14,7 +14,9 @@ export default function Input() {
 
     const [checkCorrectLogin, setCheckCorrectLogin] = useState<any>('')
 
+    const [loading, setLoading] = useState(false);
 
+    const { setContextAPI } = useContext(MeuContexto);
 
     const handleSubmit = async (event: any) => {
 
@@ -36,6 +38,7 @@ export default function Input() {
             });
 
             if (response.ok) {
+                setLoading(true);
                 const responseData = await response.json();
 
                 const responseUser = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/me`, {
@@ -50,7 +53,7 @@ export default function Input() {
                 const name = responseUserData.name
 
                 Cookies.set('token', responseData);
-                Cookies.set('name', name);
+                setContextAPI(name)
                 router.push('/');
             } else {
                 const errorData = await response.json();
@@ -65,36 +68,41 @@ export default function Input() {
     };
 
     return (
-        <section className={styles.form}>
-            <form onSubmit={handleSubmit}>
-                <h1 className={styles.loginTittle}>LOGIN</h1>
-                {checkCorrectLogin}
-                <input
-                    type="email"
-                    value={email}
-                    maxLength={60}
-                    placeholder="Email"
-                    onChange={e => setEmail(e.target.value)}
-                    required
-                />
-                <input
-                    type="password"
-                    value={password}
-                    maxLength={30}
-                    placeholder="Senha"
-                    onChange={e => setPassword(e.target.value)}
-                    required
-                />
-                <button type="submit">Login</button>
+            <section className={styles.form}>
+                {loading && (
+                    <div className={styles.overlay}>
+                        <div className={styles.spinner}></div>
+                    </div>
+                )}
+                <form onSubmit={handleSubmit}>
+                    <h1 className={styles.loginTittle}>LOGIN</h1>
+                    {checkCorrectLogin}
+                    <input
+                        type="email"
+                        value={email}
+                        maxLength={60}
+                        placeholder="Email"
+                        onChange={e => setEmail(e.target.value)}
+                        required
+                    />
+                    <input
+                        type="password"
+                        value={password}
+                        maxLength={30}
+                        placeholder="Senha"
+                        onChange={e => setPassword(e.target.value)}
+                        required
+                    />
+                    <button type="submit">Login</button>
 
-                <h4>
-                    Caso não tenha uma conta
-                    <Link href="/register">
-                        <b><u>Clique Aqui</u></b>
-                    </Link>
-                </h4>
+                    <h4>
+                        Caso não tenha uma conta
+                        <Link href="/register">
+                            <b><u>Clique Aqui</u></b>
+                        </Link>
+                    </h4>
 
-            </form>
-        </section >
+                </form>
+            </section >
     )
 }

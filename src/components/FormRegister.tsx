@@ -36,6 +36,9 @@ export default function Input() {
     const [checkPassword, setCheckPassword] = useState<any>('')
     const [checkEmail, setCheckEmail] = useState<any>('')
 
+    const [loading, setLoading] = useState(false);
+
+
     const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
         resolver: yupResolver(schema)
     });
@@ -47,12 +50,13 @@ export default function Input() {
             setCheckPassword(dif)
         } else {
             const url = `${process.env.NEXT_PUBLIC_BASE_URL}/api/register`;
-            
+
             const data = {
                 name: name,
                 email: email,
                 password: password,
             };
+            setLoading(true);
 
             try {
                 const response = await fetch(url, {
@@ -79,6 +83,11 @@ export default function Input() {
 
     return (
         <section className={styles.form}>
+            {loading && (
+                <div className={styles.overlay}>
+                    <div className={styles.spinner}></div>
+                </div>
+            )}
             <form onSubmit={handleSubmit(onSubmit)}>
                 <h1 className={styles.registerTittle}>Cadastrar</h1>
                 <input

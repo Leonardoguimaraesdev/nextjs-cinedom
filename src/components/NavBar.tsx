@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import styles from '../styles/NavBar.module.scss'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Cookies from 'js-cookie'
+import MeuContexto from './MeuContexto'
 
 
 interface NavBarProps {
     page: string
     token: boolean
-    nameToken: string
 }
 
 export default function NavBar(props: NavBarProps) {
@@ -17,7 +17,13 @@ export default function NavBar(props: NavBarProps) {
 
     const [array, setArray] = useState(['HOME', 'TODOS FILMES', 'COMÉDIA', 'DRAMA', 'AVENTURA', 'ROMANCE', 'ANIMAÇÂO'])
 
+    const [loading, setLoading] = useState(false);
+
+    const { contextAPI } = useContext(MeuContexto);
+
     const changePage = (e: any) => {
+
+        setLoading(true);
 
         if (e === 'HOME') {
             router.push('/')
@@ -58,6 +64,11 @@ export default function NavBar(props: NavBarProps) {
 
     return (
         <nav className={styles.nav}>
+            {loading && (
+                <div className={styles.overlay}>
+                    <div className={styles.spinner}></div>
+                </div>
+            )}
             <div className={styles.opacity}></div>
             <div className={styles.top}>
                 <div className={styles.left}>
@@ -65,7 +76,7 @@ export default function NavBar(props: NavBarProps) {
                 </div>
                 <div className={styles.right}>
                     {!props.token ? (<><button className={styles.login} onClick={goToLogin}>ENTRAR</button>
-                        <button className={styles.register} onClick={goToRegister}>CADASTRE-SE</button></>) : <><p>Olá, {props.nameToken}</p> <button className={styles.logout} onClick={logout}>Sair</button></>}
+                        <button className={styles.register} onClick={goToRegister}>CADASTRE-SE</button></>) : <><p>Olá, {contextAPI}</p> <button className={styles.logout} onClick={logout}>Sair</button></>}
 
                 </div>
             </div>
