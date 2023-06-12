@@ -27,20 +27,17 @@ export default function Romance({ filmes }: any) {
     };
 
     categoryFilm();
-  }, []);
+  }, [filmes]);
 
 
 
   const [token, setToken] = useState(false)
-  const [name, setName] = useState('')
 
   useEffect(() => {
     const cookie = Cookies.get('token')
-    const name = Cookies.get('name')
 
-    if (cookie && name) {
+    if (cookie) {
       setToken(true)
-      setName(name)
     }
 
   }, [])
@@ -48,7 +45,7 @@ export default function Romance({ filmes }: any) {
 
   return (
     <div className={styles.main}>
-      <NavBar page='ROMANCE' token={token} nameToken={name} />
+      <NavBar page='ROMANCE' token={token}/>
       <ContentFilms films={filmsArray} />
       <Footer />
     </div>
