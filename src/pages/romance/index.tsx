@@ -32,12 +32,15 @@ export default function Romance({ filmes }: any) {
 
 
   const [token, setToken] = useState(false)
+  const [name, setName] = useState('')
 
   useEffect(() => {
     const cookie = Cookies.get('token')
+    const name = Cookies.get('name')
 
-    if (cookie) {
+    if (cookie && name) {
       setToken(true)
+      setName(name)
     }
 
   }, [])
@@ -45,7 +48,7 @@ export default function Romance({ filmes }: any) {
 
   return (
     <div className={styles.main}>
-      <NavBar page='ROMANCE' token={token}/>
+      <NavBar page='ROMANCE' token={token} nameToken={name} />
       <ContentFilms films={filmsArray} />
       <Footer />
     </div>

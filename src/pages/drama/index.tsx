@@ -18,6 +18,7 @@ export async function getServerSideProps() {
 
 export default function Drama({ filmes }: any) {
   const [token, setToken] = useState(false);
+  const [name, setName] = useState('');
   const [filmsArray, setFilmsArray] = useState<any>([]);
 
   useEffect(() => {
@@ -33,9 +34,11 @@ export default function Drama({ filmes }: any) {
 
   useEffect(() => {
     const cookie = Cookies.get('token');
+    const name = Cookies.get('name');
 
-    if (cookie) {
+    if (cookie && name) {
       setToken(true);
+      setName(name);
     }
   }, []);
 
@@ -46,7 +49,7 @@ export default function Drama({ filmes }: any) {
 
   return (
     <div className={styles.main}>
-      <NavBar page="DRAMA" token={token}/>
+      <NavBar page="DRAMA" token={token} nameToken={name} />
       <ContentFilms films={filmsArray} />
       <Footer />
     </div>

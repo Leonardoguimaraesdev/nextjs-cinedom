@@ -21,12 +21,15 @@ export async function getServerSideProps() {
 export default function TodosFilmes(props:any) {
 
   const [token, setToken] = useState(false)
+  const [name, setName] = useState('')
 
   useEffect(() => {
     const cookie = Cookies.get('token')
+    const name = Cookies.get('name')
 
-    if (cookie) {
+    if (cookie && name) {
       setToken(true)
+      setName(name)
     }
     
   }, [])
@@ -34,7 +37,7 @@ export default function TodosFilmes(props:any) {
 
   return (
     <div className={styles.main}>
-        <NavBar page='TODOS FILMES'token={token}/>
+        <NavBar page='TODOS FILMES'token={token} nameToken={name}/>
         <ContentFilms films={props.filmes}/>
         <Footer />
     </div>

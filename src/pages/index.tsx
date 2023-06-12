@@ -10,12 +10,15 @@ export default function Home() {
   
 
   const [token, setToken] = useState(false)
+  const [name, setName] = useState('')
 
   useEffect(() => {
     const cookie = Cookies.get('token')
+    const name = Cookies.get('name')
 
-    if (cookie) {
+    if (cookie && name) {
       setToken(true)
+      setName(name)
     }
     
   }, [])
@@ -23,7 +26,7 @@ export default function Home() {
 
   return (
     <div className={styles.main}>
-      <NavBar page='HOME' token={token} />
+      <NavBar page='HOME' token={token} nameToken={name} />
       <Banners />
       <CineImages />
       <Footer />

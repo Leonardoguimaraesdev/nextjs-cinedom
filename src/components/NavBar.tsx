@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import styles from '../styles/NavBar.module.scss'
 import { useRouter } from 'next/router'
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Cookies from 'js-cookie'
-import MeuContexto from './MeuContexto'
 
 
 interface NavBarProps {
     page: string
     token: boolean
+    nameToken: string
 }
 
 export default function NavBar(props: NavBarProps) {
@@ -19,7 +19,6 @@ export default function NavBar(props: NavBarProps) {
 
     const [loading, setLoading] = useState(false);
 
-    const { contextAPI } = useContext(MeuContexto);
 
     const changePage = (e: any) => {
 
@@ -76,7 +75,7 @@ export default function NavBar(props: NavBarProps) {
                 </div>
                 <div className={styles.right}>
                     {!props.token ? (<><button className={styles.login} onClick={goToLogin}>ENTRAR</button>
-                        <button className={styles.register} onClick={goToRegister}>CADASTRE-SE</button></>) : <><p>Olá, {contextAPI}</p> <button className={styles.logout} onClick={logout}>Sair</button></>}
+                        <button className={styles.register} onClick={goToRegister}>CADASTRE-SE</button></>) : <><p>Olá, {props.nameToken}</p> <button className={styles.logout} onClick={logout}>Sair</button></>}
 
                 </div>
             </div>
